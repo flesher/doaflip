@@ -1,0 +1,9 @@
+#gitignore files
+
+node_modules/*
+gruntfile.js
+package.json
+.DS_Store
+*.sublime-project
+*.sublime-workspace
+logs/
