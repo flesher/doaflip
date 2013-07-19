@@ -1,3 +1,11 @@
+/*! Underflip.js v0.9.1
+ * http://mattflesher.com
+ *
+ * Copyright (c) 2013 Matt Flesher
+ * Available under the MIT license
+ */
+
+
 (function ( $ ) {
 	
 	$.fn.underflip = function( options ) {
