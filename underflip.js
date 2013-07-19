@@ -13,13 +13,12 @@
 
     settings = $.extend({
 	    init        : 'open',
-	    trigger     : 'click',
 	    perspective : 600,
 	    axis        : 'X',
 	    origin      : 50,
 	    speed       : 500,
 	    ease        : 'ease-in',
-	    rotation    : -180,
+	    rotation    : -180
     }, options )  ;
 
     //sets initial rotation based on init setting
