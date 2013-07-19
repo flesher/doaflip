@@ -4,54 +4,128 @@
 		<title>Matt Flesher | Portfolio</title>
 		<meta charset="utf-8"/>
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href='http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic|Fauna+One' rel='stylesheet' type='text/css'>
 	</head>
 	<body>
 
 		<div class="contain">
 			<h1>Underflip</h1>
+			<p id="version">v0.9.1</p>
+			<a id="download" href="https://github.com/mflesher6/underflip">View on GitHub</a>
+
 			<div id="demo"></div>
-			<div id="buttons">
-				<button id="ex1">example 1</button>
-				<button id="ex2">example 2</button>
-				<button id="ex2">example 3</button>
-				<button id="ex2">example 4</button>
-				<button id="ex2">example 5</button>
+			<div class="clearfix" id="buttons">
+				<button id="ex1">Example #1</button>
+				<button id="ex2">Example #2</button>
+				<button id="ex3">Example #3</button>
+				<button id="ex4">Example #4</button>
+			</div>
+
+			<div id="the-code">
+
+			<p>Example #1</p>
+<pre>
+$(&#39;#ex1&#39;).click( function() {
+	
+	$(&#39;#demo&#39;).underflip({
+		rotation: 180,
+	});
+
+});
+</pre>
+
+			<p>Example #2</p>
+<pre>
+$(&#39;#ex2&#39;).click( function() {
+	
+	$(&#39;#demo&#39;).underflip({
+		rotation: 360,
+		origin: 0,
+		perspective: 1000,
+		speed: 1500
+	});
+
+});
+</pre>
+
+			<p>Example #3</p>
+<pre>
+$(&#39;#ex3&#39;).click( function() {
+	
+	$(&#39;#demo&#39;).underflip({
+		axis: &#39;Y&#39;,
+		rotation: 360,
+		origin: 100,
+		perspective: 300,
+		speed: 1000
+	});
+
+});
+</pre>
+
+			<p>Example #4</p>
+<pre>
+$(&#39;#ex4&#39;).click( function() {
+	
+	$(&#39;#demo&#39;).underflip({
+		axis: &#39;Y&#39;,
+		rotation: 360,
+		origin: 15,
+		perspective: 200,
+		speed: 1000
+	});
+});
+</pre>
 			</div>
 		</div>
 
 		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-		<script src="flippable.js"></script>
+		<script src="underflip.js"></script>
 
 		<script>
 			$('#ex1').click( function() {
 				
 				$('#demo').underflip({
 					rotation: 180,
-					trigger: 'go'
-				}).trigger('go');
+				});
 
 			});
 
 			$('#ex2').click( function() {
 				
 				$('#demo').underflip({
-					rotation: 90,
-					origin: [50, 0],
-					trigger: 'go'
-				}).init();
-
-				$('#demo').underflip.flip();
+					rotation: 360,
+					origin: 0,
+					perspective: 1000,
+					speed: 1500
+				});
 
 			});
 			
 
+			$('#ex3').click( function() {
+				
+				$('#demo').underflip({
+					axis: 'Y',
+					rotation: 360,
+					origin: 100,
+					perspective: 300,
+					speed: 1000
+				});
 
+			});
 
+			$('#ex4').click( function() {
+				
+				$('#demo').underflip({
+					axis: 'Y',
+					rotation: 360,
+					origin: 15,
+					perspective: 200,
+					speed: 1000
+				});
 
-
-
-
-
+			});
 
 		</script>
 	</body>
