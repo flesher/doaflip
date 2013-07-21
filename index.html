@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Underflip.js</title>
+		<title>doaflip.js</title>
 		<meta charset="utf-8"/>
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<link href='http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic|Fauna+One' rel='stylesheet' type='text/css'>
@@ -9,9 +9,9 @@
 	<body>
 
 		<div class="contain">
-			<h1>Underflip</h1>
+			<h1>doaflip</h1>
 			<p id="version">v0.9.1</p>
-			<a id="download" href="https://github.com/mflesher6/underflip">View on GitHub</a>
+			<a id="download" href="https://github.com/mflesher6/doaflip">View on GitHub</a>
 
 			<div id="demo"></div>
 			<div class="clearfix" id="buttons">
@@ -27,7 +27,7 @@
 <pre>
 $(&#39;#ex1&#39;).click( function() {
 	
-	$(&#39;#demo&#39;).underflip({
+	$(&#39;#demo&#39;).doaflip({
 		rotation: 180,
 	});
 
@@ -38,7 +38,7 @@ $(&#39;#ex1&#39;).click( function() {
 <pre>
 $(&#39;#ex2&#39;).click( function() {
 	
-	$(&#39;#demo&#39;).underflip({
+	$(&#39;#demo&#39;).doaflip({
 		rotation: 360,
 		origin: 0,
 		perspective: 1000,
@@ -52,7 +52,7 @@ $(&#39;#ex2&#39;).click( function() {
 <pre>
 $(&#39;#ex3&#39;).click( function() {
 	
-	$(&#39;#demo&#39;).underflip({
+	$(&#39;#demo&#39;).doaflip({
 		axis: &#39;Y&#39;,
 		rotation: 360,
 		origin: 100,
@@ -67,7 +67,7 @@ $(&#39;#ex3&#39;).click( function() {
 <pre>
 $(&#39;#ex4&#39;).click( function() {
 	
-	$(&#39;#demo&#39;).underflip({
+	$(&#39;#demo&#39;).doaflip({
 		axis: &#39;Y&#39;,
 		rotation: 360,
 		origin: 15,
@@ -80,12 +80,12 @@ $(&#39;#ex4&#39;).click( function() {
 		</div>
 
 		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-		<script src="underflip.js"></script>
+		<script src="doaflip.js"></script>
 
 		<script>
 			$('#ex1').click( function() {
 				
-				$('#demo').underflip({
+				$('#demo').doaflip({
 					rotation: 180,
 				});
 
@@ -93,7 +93,7 @@ $(&#39;#ex4&#39;).click( function() {
 
 			$('#ex2').click( function() {
 				
-				$('#demo').underflip({
+				$('#demo').doaflip({
 					rotation: 360,
 					origin: 0,
 					perspective: 1000,
@@ -105,7 +105,7 @@ $(&#39;#ex4&#39;).click( function() {
 
 			$('#ex3').click( function() {
 				
-				$('#demo').underflip({
+				$('#demo').doaflip({
 					axis: 'Y',
 					rotation: 360,
 					origin: 100,
@@ -117,7 +117,7 @@ $(&#39;#ex4&#39;).click( function() {
 
 			$('#ex4').click( function() {
 				
-				$('#demo').underflip({
+				$('#demo').doaflip({
 					axis: 'Y',
 					rotation: 360,
 					origin: 15,

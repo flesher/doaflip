@@ -1,18 +1,18 @@
-#Underflip.js
+#doaflip.js
 ##jQuery plugin for UI animations
 
-Underflip makes it easy to apply flipping animations using CSS3 and jQuery. 
+doaflip makes it easy to apply flipping animations using CSS3 and jQuery. 
 
 *Current Verson: 0.9.1*
 
 ##How it works
 
-Call `.underflip()` on any element you want to apply animation to.
+Call `.doaflip()` on any element you want to apply animation to.
 
 Pass in object to specify animation properties.
 
 ```javascript 
-$('element').underflip({
+$('element').doaflip({
       init        : 'open',    // open or closed
       perspective : 600,       // css transform perspective (px) 
       axis        : 'X',       // X or Y
